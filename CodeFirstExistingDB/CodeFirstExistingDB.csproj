@@ -52,7 +52,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Author.cs" />
+    <Compile Include="Category.cs" />
     <Compile Include="Course.cs" />
+    <Compile Include="Migrations\202009031622071_InitialModel.cs" />
+    <Compile Include="Migrations\202009031622071_InitialModel.Designer.cs">
+      <DependentUpon>202009031622071_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009031628540_AddCategoriesTable.cs" />
+    <Compile Include="Migrations\202009031628540_AddCategoriesTable.Designer.cs">
+      <DependentUpon>202009031628540_AddCategoriesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009031636370_AddCategoryColumnToCourseTable.cs" />
+    <Compile Include="Migrations\202009031636370_AddCategoryColumnToCourseTable.Designer.cs">
+      <DependentUpon>202009031636370_AddCategoryColumnToCourseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009031643510_AddDatePublishedColumnToCoursesTable.cs" />
+    <Compile Include="Migrations\202009031643510_AddDatePublishedColumnToCoursesTable.Designer.cs">
+      <DependentUpon>202009031643510_AddDatePublishedColumnToCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009031646167_ChangedCoulumTitleToNameinCourseTable.cs" />
+    <Compile Include="Migrations\202009031646167_ChangedCoulumTitleToNameinCourseTable.Designer.cs">
+      <DependentUpon>202009031646167_ChangedCoulumTitleToNameinCourseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009031654358_DeleteDatePublishedColumnFromCoursesTable.cs" />
+    <Compile Include="Migrations\202009031654358_DeleteDatePublishedColumnFromCoursesTable.Designer.cs">
+      <DependentUpon>202009031654358_DeleteDatePublishedColumnFromCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,6 +87,26 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009031622071_InitialModel.resx">
+      <DependentUpon>202009031622071_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009031628540_AddCategoriesTable.resx">
+      <DependentUpon>202009031628540_AddCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009031636370_AddCategoryColumnToCourseTable.resx">
+      <DependentUpon>202009031636370_AddCategoryColumnToCourseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009031643510_AddDatePublishedColumnToCoursesTable.resx">
+      <DependentUpon>202009031643510_AddDatePublishedColumnToCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009031646167_ChangedCoulumTitleToNameinCourseTable.resx">
+      <DependentUpon>202009031646167_ChangedCoulumTitleToNameinCourseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009031654358_DeleteDatePublishedColumnFromCoursesTable.resx">
+      <DependentUpon>202009031654358_DeleteDatePublishedColumnFromCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
